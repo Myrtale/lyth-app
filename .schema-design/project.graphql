@@ -17,10 +17,21 @@ input CreateProjectInput {
 
 type Project {
   id: ID!
+  owner: User!
+  collaborators: [User!]
 
   isPublic: Boolean!
 
   title: String!
   description: String
   body: String
+
+  updates: [ProjectUpdate!]
+}
+
+type ProjectUpdate {
+  title: String
+  body: String
+  author: User!
+  createdAt: DateTime!
 }
