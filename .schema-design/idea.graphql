@@ -1,0 +1,28 @@
+scalar DateTime
+
+extend type User {
+  ideas: [Idea!]
+}
+
+extend type Mutation {
+  postIdea(input: PostIdeaInput!): Idea!
+  deleteIdea(id: ID!): Idea!
+}
+
+input PostIdeaInput {
+  title: String!
+  description: String
+  body: String # Mardown
+}
+
+type Idea {
+  id: ID!
+  user: User!
+
+  title: String!
+  description: String
+  body: String
+
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}
