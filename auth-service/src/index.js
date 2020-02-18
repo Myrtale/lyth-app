@@ -8,6 +8,7 @@ const { SERVICE_PORT } = require('./configs/env')
 const server = new ApolloServer({
   schema,
   context,
+  // mocks: true,
   onHealthCheck: () => {
     return new Promise((resolve, reject) => {
       if (true) resolve()

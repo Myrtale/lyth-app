@@ -2,5 +2,16 @@
   "name": "gateway",
   "version": "1.0.0",
   "main": "index.js",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "start": "node src/index",
+    "dev": "nodemon src/index"
+  },
+  "dependencies": {
+    "apollo-link-http": "^1.5.16",
+    "apollo-server-express": "^2.10.1",
+    "express": "^4.17.1",
+    "graphql-tools": "^4.0.6",
+    "node-fetch": "^2.6.0"
+  }
 }
