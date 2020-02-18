@@ -1,5 +1,3 @@
-require('dotenv').config('../.env')
-
 const {
   SERVICE_PORT,
   NODE_ENV

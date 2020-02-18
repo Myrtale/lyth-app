@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  auth-service:
+    build: auth-service
+    ports:
+      - "4001:4001"
+    environment:
+      SERVICE_PORT: 4001
+    volumes:
+      - ./auth-service/src:/etc/app/src

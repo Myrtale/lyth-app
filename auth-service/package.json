@@ -9,7 +9,8 @@
     "test": "jest"
   },
   "dependencies": {
-    "apollo-server": "^2.10.1"
+    "apollo-server": "^2.10.1",
+    "merge-graphql-schemas": "^1.7.6"
   },
   "devDependencies": {
     "jest": "^25.1.0"
