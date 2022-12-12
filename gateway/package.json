@@ -10,7 +10,7 @@
   "dependencies": {
     "apollo-link-http": "^1.5.16",
     "apollo-server-express": "^2.10.1",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "graphql-tools": "^4.0.6",
     "node-fetch": "^2.6.0"
   }
